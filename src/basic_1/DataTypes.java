@@ -17,7 +17,7 @@ public class DataTypes { // primitive data type
         Double bigDecimalNumber = 5421.154444d;
         //char 2byte/16bits
         char character = 'A';
-        //Boolean 1bit,default false
+        //Boolean 1bit,by default false
         boolean isFalse = true;
 
     }
