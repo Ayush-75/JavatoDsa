@@ -5,6 +5,12 @@ import java.util.Scanner;
 public class SwitchCase {
     public static void main(String[] args) {
 
+        /*
+        The switch statement in Java only accepts expressions of type int,
+         char, byte, short, and String.
+         The switch statement doesn't accept arguments of type long,
+         float, double, boolean, or any object besides String
+        */
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the day");
         int day = sc.nextInt();
@@ -32,7 +38,6 @@ public class SwitchCase {
                 break;
             default:
                 System.out.println("Are you Drunk");
-                break;
         }
     }
 }

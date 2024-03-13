@@ -1,6 +1,7 @@
 package operators;
 
 import java.awt.image.Kernel;
+import java.util.Scanner;
 
 public class Operators {
 
@@ -65,13 +66,24 @@ public class Operators {
         // Ternary operator
         // ?: -> if else
 
-        int i = 5;
-        int j = 77;
-        int k = 88;
-        int l = 75;
+//        Scanner sc = new Scanner(System.in);
+        int i = 80;
+        int j = 6000000 ;
+        int k =70000;
+        int l = 90;
 
-        int max = (i > j) ? i : (i > k) ? i : (j > k) ? j : k;
-        System.out.println(max);
+        int max = (i > j) ? ((i > k) ? i : k) : (j > k) ? j : k;
+        System.out.println("max : "+max);
+
+        int tax= (i > j) ? (i > k ? (i > l ? i : l) : (k > l ? k : l)) : (j > k ? (j > l ? j : l) : (k > l ? k : l));
+
+        System.out.println("tax :"+tax);
+
+        int kax  = (i>j && i>k && i>l)?i:(j>k && j>l)?j:(k>l)?k:l;
+        System.out.println("kax : "+kax);
+
+        int mat = (int) Math.max((Math.max(i,j)),Math.max(k,l));
+        System.out.println("Mat : "+mat);
 
     }
 }
