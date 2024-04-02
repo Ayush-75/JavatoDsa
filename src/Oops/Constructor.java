@@ -24,6 +24,7 @@ class DefaultCons{
     public DefaultCons(int a, int b){
         this.a= a;
         this.b = b;
+//        this.print();
     }
 
     // constructor overloading
