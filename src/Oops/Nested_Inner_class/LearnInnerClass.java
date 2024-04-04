@@ -1,7 +1,5 @@
 package Oops.Nested_Inner_class;
 
-import Oops.abstraction.LearnAbstract;
-
 public class LearnInnerClass {
 
     int age;
@@ -19,6 +17,9 @@ public class LearnInnerClass {
     // nested static class
     static class PlayStation{
         int price;
+        void access(LearnInnerClass learnInnerClass){
+            System.out.println(learnInnerClass.age);
+        }
 
     }
 
@@ -33,5 +34,6 @@ public class LearnInnerClass {
         System.out.println(obj.age);
         PlayStation  playStation = new LearnInnerClass.PlayStation();
         playStation.price = 55000;
+        playStation.access(obj);
     }
 }

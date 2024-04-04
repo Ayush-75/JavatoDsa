@@ -1,7 +1,5 @@
 package Oops.AnonymousClass;
 
-import Oops.abstraction.LearnAbstract;
-
 public class LearnAnonymous {
 
     class InnerClass extends OuterClass {
@@ -29,6 +27,7 @@ public class LearnAnonymous {
 
     };
 
+    // lambda expression with functional interface instance
     WakeAble wakeAble = (int steps) -> {
         System.out.println("Waked "+steps+" steps");
         return steps;
@@ -59,6 +58,34 @@ public class LearnAnonymous {
         anonymous.obj.interfaceMethod();
 
         anonymous.wakeAble.walks(50);
+
+        HowManyMethods howManyMethods = new HowManyMethods() {
+            @Override
+            public void say() {
+
+            }
+
+            @Override
+            public void track() {
+                HowManyMethods.super.track();
+            }
+
+            @Override
+            public void track2() {
+                HowManyMethods.super.track2();
+            }
+
+
+        };
+        howManyMethods.track();
+        howManyMethods.track2();
+        HowManyMethods.track3();
+
+        SuperInterface obj2= () -> {
+            System.out.println("Its interface method");
+        };
+
+//        obj2.interfaceMethod();
 
 
     }
