@@ -15,9 +15,9 @@ public class Idk2 {
         int sum = 0;
         for (int[] i : Matrix) {
             for (int num : i) {
-                sum+=num;
+                sum += num;
             }
         }
-                System.out.println(sum);
+        System.out.println(sum);
     }
 }
