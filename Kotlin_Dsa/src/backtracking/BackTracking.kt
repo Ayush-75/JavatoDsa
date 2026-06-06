@@ -1,4 +1,4 @@
-package normal_patterns
+package backtracking
 
 fun main(args: Array<String>) {
 
