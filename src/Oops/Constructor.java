@@ -43,6 +43,6 @@ class DefaultCons{
         System.out.println(this);
         this.print();
         num1.print();
-        return new DefaultCons(a+ num1.a,b+ num1.b);
+        return new DefaultCons(this.a+ num1.a,this.b+ num1.b);
     }
 }

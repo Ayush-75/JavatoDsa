@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Dsa_Start/Dsa_Start.iml" filepath="$PROJECT_DIR$/Dsa_Start/Dsa_Start.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavatoDsa.iml" filepath="$PROJECT_DIR$/JavatoDsa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kotlin_Dsa/Kotlin_Dsa.iml" filepath="$PROJECT_DIR$/Kotlin_Dsa/Kotlin_Dsa.iml" />
     </modules>
   </component>
 </project>
